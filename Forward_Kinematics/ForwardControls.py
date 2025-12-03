@@ -169,7 +169,6 @@ servo_frame.pack(pady=15)
 for i in range(6):
     col = tk.Frame(servo_frame)
     col.grid(row=0, column=i, padx=10)
-    print(i)
     slider = tk.Scale(col, from_=180, to=0, length=220,
                       label=f"Servo {i+1}", orient=tk.VERTICAL)
     slider.set(90)

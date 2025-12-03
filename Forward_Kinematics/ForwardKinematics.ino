@@ -31,8 +31,8 @@ void loop() {
     String input = Serial.readStringUntil('\n');
     input.trim();
     parseCommand(input);
-    reportPositions();
     moveServos();
+    reportPositions();
     
   }
 
@@ -75,7 +75,7 @@ void moveServos()
         servos[i].write(current[i]);
       }
     }
-    delay(20);
+    delay(25);
   }
 }
 
